@@ -38,11 +38,11 @@ class VoiceGame(cocos.layer.ColorLayer):
         self.add(self.floor)
         pos = 0, 100
         self.maxx=0
-        for i in range(3):
+        for i in range(30):
             b = Block(pos)
             self.floor.add(b)
             pos = b.x + b.width, b.height
-            if i == 2:
+            if i == 29:
                 self.maxx = b.x
 
         # open sound input
